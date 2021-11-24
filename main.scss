@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&family=Poppins&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'Cormorant', sans-serif;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: #222;
+   background:linear-gradient(rgba(119, 118, 118, 0.7),rgba(255, 255, 255, 0.2)), center / cover url(https://source.unsplash.com/1600x900/?london,britain) no-repeat;
+   .title {
+      margin-top: 20px;
+      padding: 0 30px;
+      text-align: center;
+      background-color: #222222d2;
+      border-radius: 10px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      font-size: 1.2rem;
+      h1 {
+         margin-right: 10px;
+      }
+   }
+   .input-word {
+      display: flex;
+      justify-content: space-between;
+      width: 520px;
+      margin-top: 40px;
+      padding: 30px;
+      background-color: #222222d2;
+      border-radius: 10px;
+      input, button {
+         outline: none;
+         border-radius: 5px;
+         background-color: #000000d2;
+         color: #f8f8f8;
+         border: 1px solid transparent;
+         padding: 10px;
+         font-size: 14px;
+         font-family: 'Poppins';
+      }
+      button {
+         cursor: pointer;
+         transition: 0.3s ease;
+         &:hover {
+            background-color: #ddd;
+            color: #222;
+         }
+      }
+   }
+   .dictionary {
+      margin: 20px 0;
+      width: 500px;
+      background-color: #222222d2;
+      padding: 30px;
+      border-radius: 10px;
+      #table {
+         width: 100%;
+         color: #f8f8f8;
+         font-size: 22px;
+         font-weight: 500;
+         border-spacing: 10px;
+         tr {
+            td {
+              &:first-of-type {
+                 width: 45%;
+              }
+              &:nth-of-type(2) {
+                 width: 45%;
+                 text-align: right;
+              }
+              &:last-of-type {
+                 font-family: 'Poppins', monospace;
+                 width: 5%;
+                 text-align: center;
+                 cursor: pointer;
+                 font-size: 16px;
+                 &:hover {
+                    opacity: 0.8;
+                 }
+              }
+            }
+         }
+      }
+   }
+}
+
+@media (max-width:520px) {
+   body {
+      .title {
+         margin: 20px auto 0;
+         height: auto;
+         padding: 20px;
+         width: 90%;
+         justify-content: center;
+         h1 {
+            text-align: left;
+            font-size: 1.6rem;
+         }
+      }
+      .input-word {
+         width: 90%;
+         height: 200px;
+         flex-direction: column;
+      }
+      .dictionary {
+         width: 90%;
+         padding: 20px;
+         #table {
+            font-size: 18px;
+         }
+      }
+   }
+}
+
+
+
+
+
+
+
