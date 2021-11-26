@@ -20,8 +20,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #222;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(119, 118, 118, 0.7)), to(rgba(255, 255, 255, 0.2))), center/cover url(https://source.unsplash.com/1600x900/?london,britain) no-repeat;
-  background: linear-gradient(rgba(119, 118, 118, 0.7), rgba(255, 255, 255, 0.2)), center/cover url(https://source.unsplash.com/1600x900/?london,britain) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(119, 118, 118, 0.7)), to(rgba(255, 255, 255, 0.2))), center/cover url(https://source.unsplash.com/1600x900/?london,britain);
+  background: linear-gradient(rgba(119, 118, 118, 0.7), rgba(255, 255, 255, 0.2)), center/cover url(https://source.unsplash.com/1600x900/?london,britain);
 }
 
 body .title {
